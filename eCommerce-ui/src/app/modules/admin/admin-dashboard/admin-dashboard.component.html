@@ -1,0 +1,19 @@
+<p>admin-dashboard works!</p>
+<mat-sidenav-container>
+    
+    <mat-sidenav #sidenav [mode]="modeValue" opened  >
+        <div class="example-button-container">
+            <button (click)="sidenav.toggle()" mat-mini-fab aria-label="Example icon button with a menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+        start
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <div class="example-button-container">
+            <button (click)="sidenav.toggle()" mat-mini-fab aria-label="Example icon button with a menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+        Main</mat-sidenav-content>
+  </mat-sidenav-container>

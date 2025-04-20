@@ -1,0 +1,17 @@
+<div class="relative mt-8">
+    <div class="carousel-container overflow-x-hidden">
+        <div class="carousel" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
+            <ng-container class="">
+                @for (item of carouselData; track $index) {
+                    <a [routerLink]="item.path" class="carousel-item">
+                        <img [src]="item.image" alt="carousel-image">
+                    </a>
+                    } @empty {
+                    <li>There are no items.</li>
+                    }
+
+            </ng-container>
+        </div>
+
+    </div>
+</div>

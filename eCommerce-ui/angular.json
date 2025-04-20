@@ -27,6 +27,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -85,6 +86,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,6 +96,9 @@
     }
   },
   "cli": {
-    "analytics": "506f7a87-127d-4092-9218-9c669a6fe019"
+    "analytics": "506f7a87-127d-4092-9218-9c669a6fe019",
+    "cache": {
+      "enabled": false
+    }
   }
 }
