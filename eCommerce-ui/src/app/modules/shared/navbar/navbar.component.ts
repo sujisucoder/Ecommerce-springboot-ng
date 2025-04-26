@@ -3,6 +3,7 @@ import { MatIcon } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { NavContentComponent } from "./nav-content/nav-content.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +17,8 @@ export class NavbarComponent {
   currentSection:any;
   isNavbarContentOpen:any;
 
+  constructor(private router: Router){}
+
   openNavbarContent(section:any){
     this.isNavbarContentOpen = true;
     this.currentSection = section;
@@ -26,7 +29,7 @@ export class NavbarComponent {
   }
 
   navigateTo(path:any){
-
+    this.router.navigate([path])
   }
 
   @HostListener('document:click',['$event'])
@@ -46,4 +49,6 @@ export class NavbarComponent {
       this.closeNavbarContent();
     }
   }
+
+
 }

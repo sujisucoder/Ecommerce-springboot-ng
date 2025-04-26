@@ -1,0 +1,8 @@
+@for (star of stars; track $index) {
+    <span class="star" (click)="rate(5)"
+    [ngClass]="{'active':star<=currentRating}"
+    >
+    <mat-icon>{{star<=currentRating?'star':'start_border'}}</mat-icon>
+
+    </span>
+}
